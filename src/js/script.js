@@ -3,6 +3,7 @@ import { nanoid } from 'nanoid'
 const productList = document.querySelector('.products-list') // контейнер для отрисовки товаров
 const form = document.querySelector('form') // получение формы
 const openModal = document.querySelector('#open-basket') // получение значка корзины товаров
+const cardLenth = document.querySelector('.basket-count__info') //плашка с количеством товара в корзине
 // получение элементов сайтбара
 const saivBarStart = document.querySelector('.offcanvas-end')
 const saivBarBackdrop = document.querySelector('.offcanvas-backdrop')
@@ -151,6 +152,7 @@ function basketСard() {
           </div>
         </div>
         `
+      cardLenth.innerHTML = document.querySelectorAll('.card')?.length
     })
   })
 }
